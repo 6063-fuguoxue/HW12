@@ -2,6 +2,8 @@
  
 This homework is about serial communication between Arduino and p5.js. It is also part of the [final project](https://github.com/6063-fuguoxue/Final) for the Creative Coding class. 
 
+Since it is just about serial communication, I don't have FSM for this homework. 
+
 ## Circuit Diagram
 
 ![](circuit-diagram.jpg)
