@@ -14,7 +14,9 @@ Since it is just about serial communication, I don't have FSM for this homework.
 
 In this project, I designed the two-way communication between Arduino and p5.js. p5.js will detect if a face exists within the camera range, which will control an LED connected to the Arduino board. On the other hand, the potentiometer and the two buttons connected to the Arduino board should be able to control digital elements on the p5.js side. 
 
-I started by sending information from Arduino to p5.js. Due to limited time this week, I only implemented the logic for the potentiometer. By rotating the potentiometer, one can change the value of the slider bar on the screen. Similarly, the information triggered by button presses can also be used to change p5.js content. 
+I started by sending information from Arduino to p5.js. Due to limited time this week, I only implemented the logic for the potentiometer. By rotating the potentiometer, one can change the value of the slider bar on the screen. Since the potentiometer will control the position of shapes in five columns, I mapped its range to [0,4] and let the slider's step be 1. This way, the potentiometer controls the slider to have one of the values in 0, 1, 2, 3, and 4. 
+
+Similarly, the information triggered by button presses can also be used to change p5.js content. 
 
 The p5.js-to-Arduino communication took me a bit longer to figure out. In `function drawOthers()`, I wrote the following: 
 
