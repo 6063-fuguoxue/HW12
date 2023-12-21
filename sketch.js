@@ -188,7 +188,7 @@ function drawOthers() {
       mSerial.write(0xab);
     } else {      
       mSerial.write(0xab);
-      console.log(0xab);
+      // console.log(0xab);
     }
     prevDetectionsLeng = detections.length;
     
